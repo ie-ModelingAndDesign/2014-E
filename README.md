@@ -17,3 +17,7 @@ git add [ファイル名]
 git commit -m “[メッセージ]”
 git push -u origin master
 ```
+すべてaddしたいときは以下でも可
+```
+git add --all
+```
