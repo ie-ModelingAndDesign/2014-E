@@ -14,6 +14,7 @@
 		E2BE80D81A23377200684720 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BE80D71A23377200684720 /* Images.xcassets */; };
 		E2BE80DB1A23377200684720 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2BE80D91A23377200684720 /* LaunchScreen.xib */; };
 		E2BE80E71A23377200684720 /* Modeling_ETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BE80E61A23377200684720 /* Modeling_ETests.swift */; };
+		E2D5D7471A397FD0001FDC82 /* ViewControllerAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5D7461A397FD0001FDC82 /* ViewControllerAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		E2BE80E01A23377200684720 /* Modeling_ETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Modeling_ETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BE80E51A23377200684720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2BE80E61A23377200684720 /* Modeling_ETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modeling_ETests.swift; sourceTree = "<group>"; };
+		E2D5D7461A397FD0001FDC82 /* ViewControllerAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				E2BE80CD1A23377200684720 /* AppDelegate.swift */,
 				E2BE80D21A23377200684720 /* ViewController.swift */,
 				E2BE80D41A23377200684720 /* Main.storyboard */,
+				E2D5D7461A397FD0001FDC82 /* ViewControllerAlert.swift */,
 				E2BE80D71A23377200684720 /* Images.xcassets */,
 				E2BE80D91A23377200684720 /* LaunchScreen.xib */,
 				E2BE80CF1A23377200684720 /* Modeling_E.xcdatamodeld */,
@@ -218,6 +221,7 @@
 				E2BE80D31A23377200684720 /* ViewController.swift in Sources */,
 				E2BE80D11A23377200684720 /* Modeling_E.xcdatamodeld in Sources */,
 				E2BE80CE1A23377200684720 /* AppDelegate.swift in Sources */,
+				E2D5D7471A397FD0001FDC82 /* ViewControllerAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				E2BE80EC1A23377200684720 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2BE80ED1A23377200684720 /* Build configuration list for PBXNativeTarget "Modeling_ETests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				E2BE80EF1A23377200684720 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

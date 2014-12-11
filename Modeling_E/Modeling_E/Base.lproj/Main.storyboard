@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ceQ-WC-m3s">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ceQ-WC-m3s">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -75,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="291" y="967"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Alert-->
         <scene sceneID="IcT-9L-oVo">
             <objects>
-                <viewController id="jJj-0h-1EH" sceneMemberID="viewController">
+                <viewController id="jJj-0h-1EH" customClass="ViewControllerAlert" customModule="Modeling_E" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QmG-pb-G7I"/>
                         <viewControllerLayoutGuide type="bottom" id="BcO-WD-oeY"/>
@@ -86,7 +86,25 @@
                     <view key="view" contentMode="scaleToFill" id="GI2-1B-4cW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="目覚ましなページ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Nl-bE-zRS">
+                                <rect key="frame" x="232" y="192" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="pBK-QG-zvq">
+                                <rect key="frame" x="140" y="428" width="320" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="439976047.077694">
+                                    <!--2014-12-11 07:34:07 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="pBK-QG-zvq" secondAttribute="centerX" id="D7B-gp-pBh"/>
+                            <constraint firstItem="BcO-WD-oeY" firstAttribute="top" secondItem="pBK-QG-zvq" secondAttribute="bottom" constant="10" id="EQl-La-HuF"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7C-Ej-Pkd" userLabel="First Responder" sceneMemberID="firstResponder"/>
