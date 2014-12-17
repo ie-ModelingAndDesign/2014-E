@@ -8,7 +8,7 @@
 
 import UIKit
 
-let imgList: [String] = ["test1","test2","test3"]
+let imgList: [String] = ["test_s","test1","test2","test3"]
 var flag: Int = 0
 var img: String = imgList[flag]
 
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     
     @IBAction func imgset(sender: UIButton) {
         flag++
-        img  = imgList[flag%3]
+        img  = imgList[flag%4]
         targetURL = NSBundle.mainBundle().pathForResource(img, ofType: "gif")
         loadAddressURL()
         println("result:\(img)")

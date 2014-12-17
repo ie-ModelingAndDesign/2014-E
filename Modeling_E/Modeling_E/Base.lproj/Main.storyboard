@@ -114,7 +114,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="fjY-FQ-LRX">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defo.png" translatesAutoresizingMaskIntoConstraints="NO" id="fjY-FQ-LRX">
                                 <rect key="frame" x="348" y="64" width="231" height="356"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="356" id="DFi-Q9-ifU"/>
@@ -180,6 +180,6 @@
     </scenes>
     <resources>
         <image name="button.png" width="200" height="100"/>
-        <image name="test1.gif" width="600" height="1000"/>
+        <image name="defo.png" width="300" height="500"/>
     </resources>
 </document>
