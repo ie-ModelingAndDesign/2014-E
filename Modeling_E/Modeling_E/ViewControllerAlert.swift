@@ -21,7 +21,14 @@ class ViewControllerAlert: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBAction func date(sender: UIDatePicker){
+        let myDateFormatter: NSDateFormatter = NSDateFormatter()
+        myDateFormatter.dateFormat = "HH:mm"
+        var mySelectedDate: NSString = myDateFormatter.stringFromDate(sender.date)
+        timeLabel.text = "設定した時間は\n\(mySelectedDate)だね！"
+        timeLabel.numberOfLines = 2
+    }
     /*
     // MARK: - Navigation
 
