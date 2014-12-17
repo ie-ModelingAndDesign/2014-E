@@ -61,7 +61,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99215692281723022" green="0.9960784912109375" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="SXH-Ra-O59" secondAttribute="centerY" id="4z3-S9-igc"/>
                             <constraint firstAttribute="centerX" secondItem="ZmF-s9-BzH" secondAttribute="centerX" id="Ix3-fO-oWr"/>
@@ -141,7 +141,7 @@
                                 </connections>
                             </datePicker>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.9960784912109375" green="0.9960784912109375" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="fjY-FQ-LRX" secondAttribute="trailing" constant="5" id="29L-aq-GLS"/>
                             <constraint firstItem="80m-DR-39x" firstAttribute="top" secondItem="QmG-pb-G7I" secondAttribute="bottom" constant="10" id="hA0-QZ-Weh"/>
