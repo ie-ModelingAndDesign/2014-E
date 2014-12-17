@@ -14,6 +14,7 @@ var img: String = imgList[flag]
 
 class ViewController: UIViewController {
     
+    @IBAction func unwindToTOP(segue: UIStoryboardSegue) {}
     @IBOutlet weak var gif: UIWebView!
     
     var targetURL = NSBundle.mainBundle().pathForResource(img, ofType: "gif")
