@@ -159,11 +159,22 @@
                                     <constraint firstAttribute="height" constant="419" id="OSx-ba-o1H"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWe-Gw-dYL">
+                                <rect key="frame" x="140" y="388" width="35" height="30"/>
+                                <state key="normal" title="設定!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setTimeButton:" destination="jJj-0h-1EH" eventType="touchUpInside" id="ATy-Na-9cO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.9960784912109375" green="0.9960784912109375" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="fjY-FQ-LRX" secondAttribute="trailing" constant="5" id="29L-aq-GLS"/>
+                            <constraint firstItem="pBK-QG-zvq" firstAttribute="top" secondItem="xWe-Gw-dYL" secondAttribute="bottom" constant="15" id="S0O-Ei-H9e"/>
                             <constraint firstItem="80m-DR-39x" firstAttribute="top" secondItem="QmG-pb-G7I" secondAttribute="bottom" constant="10" id="hA0-QZ-Weh"/>
+                            <constraint firstItem="xWe-Gw-dYL" firstAttribute="leading" secondItem="GI2-1B-4cW" secondAttribute="leadingMargin" constant="124" id="myC-QF-yVV"/>
                             <constraint firstAttribute="centerX" secondItem="pBK-QG-zvq" secondAttribute="centerX" id="npO-Nx-zIt"/>
                             <constraint firstItem="BcO-WD-oeY" firstAttribute="top" secondItem="pBK-QG-zvq" secondAttribute="bottom" constant="5" id="wAJ-SK-8PM"/>
                             <constraint firstItem="80m-DR-39x" firstAttribute="leading" secondItem="GI2-1B-4cW" secondAttribute="leadingMargin" constant="10" id="y0L-zB-N9U"/>
@@ -171,6 +182,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="setTimeButton" destination="xWe-Gw-dYL" id="4uf-td-J9A"/>
                         <outlet property="timeLabel" destination="80m-DR-39x" id="jV4-KE-3RC"/>
                     </connections>
                 </viewController>

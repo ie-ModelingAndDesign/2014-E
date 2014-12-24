@@ -7,6 +7,7 @@
 //
 
 import UIKit
+var mySelectedDate: String = "0"
 
 class ViewControllerAlert: UIViewController {
 
@@ -15,7 +16,7 @@ class ViewControllerAlert: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -25,10 +26,28 @@ class ViewControllerAlert: UIViewController {
     @IBAction func date(sender: UIDatePicker){
         let myDateFormatter: NSDateFormatter = NSDateFormatter()
         myDateFormatter.dateFormat = "HH:mm"
-        var mySelectedDate: NSString = myDateFormatter.stringFromDate(sender.date)
+        mySelectedDate = myDateFormatter.stringFromDate(sender.date)
+    }
+    
+    @IBOutlet weak var setTimeButton: UIButton!
+    @IBAction func setTimeButton(sender: AnyObject) {
         timeLabel.text = "設定した時間は\n\(mySelectedDate)だね！"
         timeLabel.numberOfLines = 2
     }
+    
+    func format(date : NSDate) -> String {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.locale = NSLocale(localeIdentifier: "ja_JP")
+        dateFormatter.dateFormat = "HH:mm"
+        return  dateFormatter.stringFromDate(date)
+    }
+    
+//    func alarm() {
+//        if format(NSData()) == StringLiteralType(mySelectedDate) {
+//            timeLabel.text = "おきてー！"
+//        }
+//    }
+    
     /*
     // MARK: - Navigation
 
