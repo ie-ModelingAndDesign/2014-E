@@ -10,31 +10,37 @@ import UIKit
 var mySelectedDate: String = "0"
 
 class ViewControllerAlert: UIViewController {
-
+let defaults = NSUserDefaults.standardUserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        //時刻評価を30秒ごとに
+        NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: Selector("alarm"), userInfo: nil, repeats: true)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    //セリフラベル
     @IBOutlet weak var timeLabel: UILabel!
+    
+    //設定した時間の取得
     @IBAction func date(sender: UIDatePicker){
         let myDateFormatter: NSDateFormatter = NSDateFormatter()
         myDateFormatter.dateFormat = "HH:mm"
         mySelectedDate = myDateFormatter.stringFromDate(sender.date)
     }
     
+    //時間設定buttonと押した時のアクション
     @IBOutlet weak var setTimeButton: UIButton!
     @IBAction func setTimeButton(sender: AnyObject) {
         timeLabel.text = "設定した時間は\n\(mySelectedDate)だね！"
         timeLabel.numberOfLines = 2
     }
     
+    //現在時刻取得メソッド
     func format(date : NSDate) -> String {
         let dateFormatter = NSDateFormatter()
         dateFormatter.locale = NSLocale(localeIdentifier: "ja_JP")
@@ -42,11 +48,13 @@ class ViewControllerAlert: UIViewController {
         return  dateFormatter.stringFromDate(date)
     }
     
-//    func alarm() {
-//        if format(NSData()) == StringLiteralType(mySelectedDate) {
-//            timeLabel.text = "おきてー！"
-//        }
-//    }
+    //設定時刻になった時の動作
+    func alarm() {
+        let now = NSDate()
+            if(format(now) == mySelectedDate as NSString){
+               timeLabel.text = "時間だよ！おきてー！"
+            }
+    }
     
     /*
     // MARK: - Navigation
