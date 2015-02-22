@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 let imgList: [String] = ["smile2","angry2","ai2","zito2","odoroki2","test_s"]
 let lastImgList: [String] = ["smile_last","angry_last","ai_last","zito_last","odoroki_last"]
+let serifList: [String] = ["ari","daijo","donnna","dou","oo","a","baka"]
 var serif: [String] = ["課題終わった？","今日時間ある?","今日の課題出した？","調子どう？","ふわぁ〜","進捗どう？","どこ見てるの？","勉強進んでる？","どう？頑張ってる？","今度の休みの日に遊びに行かない？","教えて欲しい課題があるんだけど，大丈夫?"]
 var serifAnswer: [[String]] = [["まだ","やったよ"],
                                 ["あるよ","課題が忙しいから，無いかな","頑張って早く終わらせるね","遺書に勉強しよ"],
@@ -34,16 +36,59 @@ var serifResult: [[[String]]] = [[["あとで見せてって言っても見せ�
                                 [["そっか，なら仕方ないね，頑張ってね","そっか，じゃあ今度時間ある時に行こうね"],["じゃあプラン考えておいてね！楽しみにしてる"]],
                                 [["お願いね！"],["ここなんだけど，どうしたらいいかな"],["あ，できた！すごい！"]]]
 var imgNumberList: [[Int]] = [[1,0],[3,2,0,0],[0,4,2,1],[0,1,2,2],[2,1],[4,0,0],[4,2],[0,2,0,1],[0,3,0],[2,2],[0,3,0]]
+var serifNumberList: [[Int]] = [[1,4],[1,1,0,0],[4,1,0,3],[4,3],[3,3],[1,1,4],[5,6],[1,1,3,1],[4,1,4],[5,0],[0,4,0]]
 var talkFlag:Bool = true
 var flag2: Bool = true
 var randSerifNumber = 0
 var img: String = imgList[5]
 var cnt = 0.0
 var timer : NSTimer!
+var mySerifPlayer : AVAudioPlayer!
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,AVAudioPlayerDelegate {
     
     @IBAction func unwindToTOP(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP2(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP3(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP4(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP5(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP6(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP7(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP8(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP9(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP10(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP11(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP12(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP13(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP14(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP15(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP16(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP17(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP18(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP19(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP20(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP21(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP22(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP23(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP24(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP25(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP26(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP27(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP28(segue: UIStoryboardSegue) {}
+    
+    func playSerif(serif: Int){
+        //再生する音源のURLを生成.
+        var soundFilePath : NSString = NSBundle.mainBundle().pathForResource(serifList[serif], ofType: "wav")!
+        var fileURL : NSURL = NSURL(fileURLWithPath: soundFilePath)!
+        
+        //AVAudioPlayerのインスタンス化.
+        mySerifPlayer = AVAudioPlayer(contentsOfURL: fileURL, error: nil)
+        
+        //AVAudioPlayerのデリゲートをセット.
+        mySerifPlayer.delegate = self
+        mySerifPlayer.play()
+    }
+    
     @IBOutlet weak var gif: UIWebView!
     @IBOutlet weak var lastImgView: UIWebView!
     
@@ -135,12 +180,14 @@ class ViewController: UIViewController {
             myTextView.text = serifResult[randSerifNumber][0][0] //3つめの[0]はいいかんじにすること
             yesButtonView.hidden = true
             noButtonView.hidden = true
+            playSerif(serifNumberList[randSerifNumber][0])
         } else {
             lastImgset(imgNumberList[randSerifNumber][1])
             imgset(imgNumberList[randSerifNumber][1])
             myTextView.text = serifResult[randSerifNumber][1][0]
             yesButtonView.hidden = true
             noButtonView.hidden = true
+            playSerif(serifNumberList[randSerifNumber][1])
         }
     }
     

@@ -11,7 +11,6 @@
 		E24EC76E1A41C5ED0051A52D /* defo.png in Resources */ = {isa = PBXBuildFile; fileRef = E24EC7691A41C5ED0051A52D /* defo.png */; };
 		E258BAAF1A99C62C00B26859 /* nc82952.png in Resources */ = {isa = PBXBuildFile; fileRef = E258BAAE1A99C62C00B26859 /* nc82952.png */; };
 		E258BAB51A99F7B200B26859 /* ai2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E258BAB01A99F7B200B26859 /* ai2.gif */; };
-		E258BAB61A99F7B200B26859 /* angry2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E258BAB11A99F7B200B26859 /* angry2.gif */; };
 		E258BAB71A99F7B200B26859 /* odoroki2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E258BAB21A99F7B200B26859 /* odoroki2.gif */; };
 		E258BAB81A99F7B200B26859 /* smile2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E258BAB31A99F7B200B26859 /* smile2.gif */; };
 		E258BAB91A99F7B200B26859 /* zito2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E258BAB41A99F7B200B26859 /* zito2.gif */; };
@@ -20,6 +19,15 @@
 		E258BAC11A9A172200B26859 /* odoroki_last.gif in Resources */ = {isa = PBXBuildFile; fileRef = E258BABD1A9A172200B26859 /* odoroki_last.gif */; };
 		E258BAC21A9A172200B26859 /* smile_last.gif in Resources */ = {isa = PBXBuildFile; fileRef = E258BABE1A9A172200B26859 /* smile_last.gif */; };
 		E258BAC31A9A172200B26859 /* zito_last.gif in Resources */ = {isa = PBXBuildFile; fileRef = E258BABF1A9A172200B26859 /* zito_last.gif */; };
+		E258BAC91A9A26F000B26859 /* ari.wav in Resources */ = {isa = PBXBuildFile; fileRef = E258BAC51A9A26F000B26859 /* ari.wav */; };
+		E258BACA1A9A26F000B26859 /* dou.wav in Resources */ = {isa = PBXBuildFile; fileRef = E258BAC61A9A26F000B26859 /* dou.wav */; };
+		E258BACB1A9A26F000B26859 /* donna.wav in Resources */ = {isa = PBXBuildFile; fileRef = E258BAC71A9A26F000B26859 /* donna.wav */; };
+		E258BACC1A9A26F000B26859 /* daijo.wav in Resources */ = {isa = PBXBuildFile; fileRef = E258BAC81A9A26F000B26859 /* daijo.wav */; };
+		E258BACE1A9A2A3500B26859 /* angry2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E258BACD1A9A2A3500B26859 /* angry2.gif */; };
+		E258BAD21A9A2C2500B26859 /* oo.wav in Resources */ = {isa = PBXBuildFile; fileRef = E258BAD11A9A2C2500B26859 /* oo.wav */; };
+		E258BAD41A9A2FAB00B26859 /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = E258BAD31A9A2FAB00B26859 /* a.wav */; };
+		E258BAD61A9A2FFA00B26859 /* baka.wav in Resources */ = {isa = PBXBuildFile; fileRef = E258BAD51A9A2FFA00B26859 /* baka.wav */; };
+		E258BAD81A9A333C00B26859 /* でほこ.png in Resources */ = {isa = PBXBuildFile; fileRef = E258BAD71A9A333C00B26859 /* でほこ.png */; };
 		E298B0471A4179C400907591 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = E298B0431A4179C400907591 /* button.png */; };
 		E2BE80CE1A23377200684720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BE80CD1A23377200684720 /* AppDelegate.swift */; };
 		E2BE80D11A23377200684720 /* Modeling_E.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2BE80CF1A23377200684720 /* Modeling_E.xcdatamodeld */; };
@@ -46,7 +54,6 @@
 		E24EC7691A41C5ED0051A52D /* defo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defo.png; sourceTree = "<group>"; };
 		E258BAAE1A99C62C00B26859 /* nc82952.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nc82952.png; path = ../../pic/nc82952.png; sourceTree = "<group>"; };
 		E258BAB01A99F7B200B26859 /* ai2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = ai2.gif; path = ../../pic/ai2.gif; sourceTree = "<group>"; };
-		E258BAB11A99F7B200B26859 /* angry2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = angry2.gif; path = ../../pic/angry2.gif; sourceTree = "<group>"; };
 		E258BAB21A99F7B200B26859 /* odoroki2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = odoroki2.gif; path = ../../pic/odoroki2.gif; sourceTree = "<group>"; };
 		E258BAB31A99F7B200B26859 /* smile2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = smile2.gif; path = ../../pic/smile2.gif; sourceTree = "<group>"; };
 		E258BAB41A99F7B200B26859 /* zito2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = zito2.gif; path = ../../pic/zito2.gif; sourceTree = "<group>"; };
@@ -55,6 +62,15 @@
 		E258BABD1A9A172200B26859 /* odoroki_last.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = odoroki_last.gif; path = ../../pic/odoroki_last.gif; sourceTree = "<group>"; };
 		E258BABE1A9A172200B26859 /* smile_last.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = smile_last.gif; path = ../../pic/smile_last.gif; sourceTree = "<group>"; };
 		E258BABF1A9A172200B26859 /* zito_last.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = zito_last.gif; path = ../../pic/zito_last.gif; sourceTree = "<group>"; };
+		E258BAC51A9A26F000B26859 /* ari.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ari.wav; sourceTree = "<group>"; };
+		E258BAC61A9A26F000B26859 /* dou.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dou.wav; sourceTree = "<group>"; };
+		E258BAC71A9A26F000B26859 /* donna.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = donna.wav; sourceTree = "<group>"; };
+		E258BAC81A9A26F000B26859 /* daijo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = daijo.wav; sourceTree = "<group>"; };
+		E258BACD1A9A2A3500B26859 /* angry2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = angry2.gif; path = ../../pic/angry2.gif; sourceTree = "<group>"; };
+		E258BAD11A9A2C2500B26859 /* oo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = oo.wav; sourceTree = "<group>"; };
+		E258BAD31A9A2FAB00B26859 /* a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = a.wav; sourceTree = "<group>"; };
+		E258BAD51A9A2FFA00B26859 /* baka.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = baka.wav; sourceTree = "<group>"; };
+		E258BAD71A9A333C00B26859 /* でほこ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "でほこ.png"; path = "../../pic/でほこ.png"; sourceTree = "<group>"; };
 		E298B0431A4179C400907591 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = chart/button.png; sourceTree = "<group>"; };
 		E2BE80C81A23377200684720 /* Modeling_E.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modeling_E.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BE80CC1A23377200684720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +114,21 @@
 			path = ../../pic;
 			sourceTree = "<group>";
 		};
+		E258BAC41A9A26F000B26859 /* セリフ */ = {
+			isa = PBXGroup;
+			children = (
+				E258BAC51A9A26F000B26859 /* ari.wav */,
+				E258BAC61A9A26F000B26859 /* dou.wav */,
+				E258BAC71A9A26F000B26859 /* donna.wav */,
+				E258BAC81A9A26F000B26859 /* daijo.wav */,
+				E258BAD51A9A2FFA00B26859 /* baka.wav */,
+				E258BAD31A9A2FAB00B26859 /* a.wav */,
+				E258BAD11A9A2C2500B26859 /* oo.wav */,
+			);
+			name = "セリフ";
+			path = "../../セリフ";
+			sourceTree = "<group>";
+		};
 		E2BE80BF1A23377200684720 = {
 			isa = PBXGroup;
 			children = (
@@ -119,10 +150,11 @@
 		E2BE80CA1A23377200684720 /* Modeling_E */ = {
 			isa = PBXGroup;
 			children = (
+				E258BAC41A9A26F000B26859 /* セリフ */,
 				E24EC7641A41C5ED0051A52D /* pic */,
 				E258BAB01A99F7B200B26859 /* ai2.gif */,
 				E258BABA1A9A01B000B26859 /* ai_last.gif */,
-				E258BAB11A99F7B200B26859 /* angry2.gif */,
+				E258BACD1A9A2A3500B26859 /* angry2.gif */,
 				E258BAB21A99F7B200B26859 /* odoroki2.gif */,
 				E258BAB31A99F7B200B26859 /* smile2.gif */,
 				E258BAB41A99F7B200B26859 /* zito2.gif */,
@@ -130,6 +162,7 @@
 				E258BABD1A9A172200B26859 /* odoroki_last.gif */,
 				E258BABE1A9A172200B26859 /* smile_last.gif */,
 				E258BABF1A9A172200B26859 /* zito_last.gif */,
+				E258BAD71A9A333C00B26859 /* でほこ.png */,
 				E2BE80CD1A23377200684720 /* AppDelegate.swift */,
 				E258BAAE1A99C62C00B26859 /* nc82952.png */,
 				E2BE80D21A23377200684720 /* ViewController.swift */,
@@ -249,22 +282,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E258BACB1A9A26F000B26859 /* donna.wav in Resources */,
+				E258BACC1A9A26F000B26859 /* daijo.wav in Resources */,
 				E24EC76D1A41C5ED0051A52D /* test_s.gif in Resources */,
 				E258BAB91A99F7B200B26859 /* zito2.gif in Resources */,
 				E258BAC01A9A172200B26859 /* angry_last.gif in Resources */,
+				E258BACE1A9A2A3500B26859 /* angry2.gif in Resources */,
 				E2BE80D61A23377200684720 /* Main.storyboard in Resources */,
+				E258BAC91A9A26F000B26859 /* ari.wav in Resources */,
+				E258BAD81A9A333C00B26859 /* でほこ.png in Resources */,
 				E258BABB1A9A01B000B26859 /* ai_last.gif in Resources */,
 				E298B0471A4179C400907591 /* button.png in Resources */,
 				E258BAAF1A99C62C00B26859 /* nc82952.png in Resources */,
 				E258BAC31A9A172200B26859 /* zito_last.gif in Resources */,
+				E258BAD21A9A2C2500B26859 /* oo.wav in Resources */,
 				E24EC76E1A41C5ED0051A52D /* defo.png in Resources */,
+				E258BAD61A9A2FFA00B26859 /* baka.wav in Resources */,
 				E2BE80DB1A23377200684720 /* LaunchScreen.xib in Resources */,
 				E258BAB81A99F7B200B26859 /* smile2.gif in Resources */,
 				E2BE80D81A23377200684720 /* Images.xcassets in Resources */,
+				E258BAD41A9A2FAB00B26859 /* a.wav in Resources */,
 				E258BAB71A99F7B200B26859 /* odoroki2.gif in Resources */,
+				E258BACA1A9A26F000B26859 /* dou.wav in Resources */,
 				E258BAC11A9A172200B26859 /* odoroki_last.gif in Resources */,
 				E258BAB51A99F7B200B26859 /* ai2.gif in Resources */,
-				E258BAB61A99F7B200B26859 /* angry2.gif in Resources */,
 				E258BAC21A9A172200B26859 /* smile_last.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
