@@ -41,6 +41,34 @@ var img: String = imgList[5]
 class ViewController: UIViewController {
     
     @IBAction func unwindToTOP(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP2(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP3(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP4(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP5(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP6(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP7(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP8(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP9(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP10(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP11(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP12(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP13(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP14(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP15(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP16(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP17(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP18(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP19(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP20(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP21(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP22(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP23(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP24(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP25(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP26(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP27(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToTOP28(segue: UIStoryboardSegue) {}
+    
     @IBOutlet weak var gif: UIWebView!
     
     var targetURL = NSBundle.mainBundle().pathForResource(img, ofType: "gif")
