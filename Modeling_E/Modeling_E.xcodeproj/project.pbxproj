@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E24EC76A1A41C5ED0051A52D /* test2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E24EC7651A41C5ED0051A52D /* test2.gif */; };
-		E24EC76B1A41C5ED0051A52D /* test3.gif in Resources */ = {isa = PBXBuildFile; fileRef = E24EC7661A41C5ED0051A52D /* test3.gif */; };
-		E24EC76C1A41C5ED0051A52D /* test1.gif in Resources */ = {isa = PBXBuildFile; fileRef = E24EC7671A41C5ED0051A52D /* test1.gif */; };
 		E24EC76D1A41C5ED0051A52D /* test_s.gif in Resources */ = {isa = PBXBuildFile; fileRef = E24EC7681A41C5ED0051A52D /* test_s.gif */; };
 		E24EC76E1A41C5ED0051A52D /* defo.png in Resources */ = {isa = PBXBuildFile; fileRef = E24EC7691A41C5ED0051A52D /* defo.png */; };
+		E258BAA91A99C2DE00B26859 /* zito2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E258BAA41A99C2DE00B26859 /* zito2.gif */; };
+		E258BAAA1A99C2DE00B26859 /* ai2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E258BAA51A99C2DE00B26859 /* ai2.gif */; };
+		E258BAAB1A99C2DE00B26859 /* smile2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E258BAA61A99C2DE00B26859 /* smile2.gif */; };
+		E258BAAC1A99C2DE00B26859 /* odoroki2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E258BAA71A99C2DE00B26859 /* odoroki2.gif */; };
+		E258BAAD1A99C2DE00B26859 /* angry2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E258BAA81A99C2DE00B26859 /* angry2.gif */; };
+		E258BAAF1A99C62C00B26859 /* nc82952.png in Resources */ = {isa = PBXBuildFile; fileRef = E258BAAE1A99C62C00B26859 /* nc82952.png */; };
 		E298B0471A4179C400907591 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = E298B0431A4179C400907591 /* button.png */; };
 		E2BE80CE1A23377200684720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BE80CD1A23377200684720 /* AppDelegate.swift */; };
 		E2BE80D11A23377200684720 /* Modeling_E.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2BE80CF1A23377200684720 /* Modeling_E.xcdatamodeld */; };
@@ -34,11 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E24EC7651A41C5ED0051A52D /* test2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = test2.gif; path = ../../pic/test2.gif; sourceTree = "<group>"; };
-		E24EC7661A41C5ED0051A52D /* test3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = test3.gif; path = ../../pic/test3.gif; sourceTree = "<group>"; };
-		E24EC7671A41C5ED0051A52D /* test1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = test1.gif; path = ../../pic/test1.gif; sourceTree = "<group>"; };
 		E24EC7681A41C5ED0051A52D /* test_s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test_s.gif; sourceTree = "<group>"; };
 		E24EC7691A41C5ED0051A52D /* defo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defo.png; sourceTree = "<group>"; };
+		E258BAA41A99C2DE00B26859 /* zito2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = zito2.gif; path = "../../../../../Documents/extraction_file/新しいフォルダー (3)-1/zito2.gif"; sourceTree = "<group>"; };
+		E258BAA51A99C2DE00B26859 /* ai2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = ai2.gif; path = "../../../../../Documents/extraction_file/新しいフォルダー (3)-1/ai2.gif"; sourceTree = "<group>"; };
+		E258BAA61A99C2DE00B26859 /* smile2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = smile2.gif; path = "../../../../../Documents/extraction_file/新しいフォルダー (3)-1/smile2.gif"; sourceTree = "<group>"; };
+		E258BAA71A99C2DE00B26859 /* odoroki2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = odoroki2.gif; path = "../../../../../Documents/extraction_file/新しいフォルダー (3)-1/odoroki2.gif"; sourceTree = "<group>"; };
+		E258BAA81A99C2DE00B26859 /* angry2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = angry2.gif; path = "../../../../../Documents/extraction_file/新しいフォルダー (3)-1/angry2.gif"; sourceTree = "<group>"; };
+		E258BAAE1A99C62C00B26859 /* nc82952.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nc82952.png; path = ../../pic/nc82952.png; sourceTree = "<group>"; };
 		E298B0431A4179C400907591 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = chart/button.png; sourceTree = "<group>"; };
 		E2BE80C81A23377200684720 /* Modeling_E.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modeling_E.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BE80CC1A23377200684720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,9 +111,12 @@
 			children = (
 				E24EC7641A41C5ED0051A52D /* pic */,
 				E2BE80CD1A23377200684720 /* AppDelegate.swift */,
-				E24EC7651A41C5ED0051A52D /* test2.gif */,
-				E24EC7661A41C5ED0051A52D /* test3.gif */,
-				E24EC7671A41C5ED0051A52D /* test1.gif */,
+				E258BAAE1A99C62C00B26859 /* nc82952.png */,
+				E258BAA41A99C2DE00B26859 /* zito2.gif */,
+				E258BAA51A99C2DE00B26859 /* ai2.gif */,
+				E258BAA61A99C2DE00B26859 /* smile2.gif */,
+				E258BAA71A99C2DE00B26859 /* odoroki2.gif */,
+				E258BAA81A99C2DE00B26859 /* angry2.gif */,
 				E2BE80D21A23377200684720 /* ViewController.swift */,
 				E2BE80D41A23377200684720 /* Main.storyboard */,
 				E298B0431A4179C400907591 /* button.png */,
@@ -225,15 +234,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E258BAAB1A99C2DE00B26859 /* smile2.gif in Resources */,
+				E258BAA91A99C2DE00B26859 /* zito2.gif in Resources */,
 				E24EC76D1A41C5ED0051A52D /* test_s.gif in Resources */,
 				E2BE80D61A23377200684720 /* Main.storyboard in Resources */,
 				E298B0471A4179C400907591 /* button.png in Resources */,
+				E258BAAF1A99C62C00B26859 /* nc82952.png in Resources */,
+				E258BAAA1A99C2DE00B26859 /* ai2.gif in Resources */,
 				E24EC76E1A41C5ED0051A52D /* defo.png in Resources */,
 				E2BE80DB1A23377200684720 /* LaunchScreen.xib in Resources */,
 				E2BE80D81A23377200684720 /* Images.xcassets in Resources */,
-				E24EC76A1A41C5ED0051A52D /* test2.gif in Resources */,
-				E24EC76C1A41C5ED0051A52D /* test1.gif in Resources */,
-				E24EC76B1A41C5ED0051A52D /* test3.gif in Resources */,
+				E258BAAC1A99C2DE00B26859 /* odoroki2.gif in Resources */,
+				E258BAAD1A99C2DE00B26859 /* angry2.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
