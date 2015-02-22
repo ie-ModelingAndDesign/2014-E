@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D1D4301B-C767-4E6F-8E01-FF443A04BBF8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>1</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5D9C94F0F12F5146AA82269C89A40903E6257CDC</key>
+		<string>https://github.com/ie-ModelingAndDesign/2014-E.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Modeling_E/1.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5D9C94F0F12F5146AA82269C89A40903E6257CDC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ie-ModelingAndDesign/2014-E.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5D9C94F0F12F5146AA82269C89A40903E6257CDC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5D9C94F0F12F5146AA82269C89A40903E6257CDC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>2014-E</string>
+		</dict>
+	</array>
+</dict>
+</plist>
