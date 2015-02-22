@@ -9,6 +9,7 @@
 import UIKit
 
 let imgList: [String] = ["smile2","angry2","ai2","zito2","odoroki2","test_s"]
+let lastImgList: [String] = ["smile_last","angry_last","ai_last","zito_last","odoroki_last"]
 var serif: [String] = ["課題終わった？","今日時間ある?","今日の課題出した？","調子どう？","ふわぁ〜","進捗どう？","どこ見てるの？","勉強進んでる？","どう？頑張ってる？","今度の休みの日に遊びに行かない？","教えて欲しい課題があるんだけど，大丈夫?"]
 var serifAnswer: [[String]] = [["まだ","やったよ"],
                                 ["あるよ","課題が忙しいから，無いかな","頑張って早く終わらせるね","遺書に勉強しよ"],
@@ -37,20 +38,23 @@ var talkFlag:Bool = true
 var flag2: Bool = true
 var randSerifNumber = 0
 var img: String = imgList[5]
+var cnt = 0.0
+var timer : NSTimer!
 
 class ViewController: UIViewController {
     
     @IBAction func unwindToTOP(segue: UIStoryboardSegue) {}
     @IBOutlet weak var gif: UIWebView!
+    @IBOutlet weak var lastImgView: UIWebView!
     
     var targetURL = NSBundle.mainBundle().pathForResource(img, ofType: "gif")
+    var targetURL2 = NSBundle.mainBundle().pathForResource(img, ofType: "gif")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadAddressURL()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -63,18 +67,28 @@ class ViewController: UIViewController {
         gif.scalesPageToFit = true
     }
     
+    func loadAddressURL2() {
+        var requestURL2 = NSURL(string: targetURL2!)
+        var req = NSURLRequest(URL: requestURL2!)
+        lastImgView.loadRequest(req)
+        lastImgView.scalesPageToFit = true
+    }
+    
     @IBOutlet weak var textViewWindow: UIView!
     @IBOutlet weak var myTextView: UITextView!
  
     //talkモードにしたりしなかったり
     @IBAction func imgset(sender: UIButton) {
         if flag2==false {
-            textViewWindow.hidden = true
-            imgset(5)
             flag2=true
+            textViewWindow.hidden = true
+            gif.hidden = false
+            lastImgView.hidden = true
+            imgset(5)
         } else {
-            makeTalkWindow()
             flag2=false
+            makeTalkWindow()
+            lastImgView.hidden = false
         }
 //        flag++
 //        img  = imgList[flag%4]
@@ -89,6 +103,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var noButton: UIButton!
     func makeTalkWindow(){ //talkeもーどに入ります
         randSerifNumber = Int(arc4random_uniform(UInt32(serif.count))) //セリフ決定
+        
+        lastImgView.hidden = false
         textViewWindow.hidden = false
         //textViewWindow.backgroundColor = UIColor.whiteColor()
         myTextView.backgroundColor = UIColor.clearColor()
@@ -99,7 +115,7 @@ class ViewController: UIViewController {
         yesButtonView.hidden = false
         noButtonView.hidden = false
     }
-
+    
     @IBOutlet weak var yesButtonView: UIButton!
     @IBAction func yesButton(sender: AnyObject) {
         makeResultWindow(true)
@@ -111,12 +127,16 @@ class ViewController: UIViewController {
     
     //結果resultによって反応を変えます
     func makeResultWindow(result: Bool){
+        cnt=0.0
+         timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("stopImg"), userInfo: nil, repeats: true)
         if result == true{
+            lastImgset(imgNumberList[randSerifNumber][0])
             imgset(imgNumberList[randSerifNumber][0])
             myTextView.text = serifResult[randSerifNumber][0][0] //3つめの[0]はいいかんじにすること
             yesButtonView.hidden = true
             noButtonView.hidden = true
         } else {
+            lastImgset(imgNumberList[randSerifNumber][1])
             imgset(imgNumberList[randSerifNumber][1])
             myTextView.text = serifResult[randSerifNumber][1][0]
             yesButtonView.hidden = true
@@ -130,6 +150,19 @@ class ViewController: UIViewController {
         targetURL = NSBundle.mainBundle().pathForResource(img, ofType: "gif")
         loadAddressURL()
     }
-
     
+    func lastImgset(number: Int){
+        targetURL2 = NSBundle.mainBundle().pathForResource(lastImgList[number], ofType: "gif")
+        loadAddressURL2()
+    }
+    
+    func stopImg(){
+        cnt += 0.1
+        if cnt > 2.4{
+            gif.hidden = true
+            timer.invalidate()
+        }
+    }
+
+
 }

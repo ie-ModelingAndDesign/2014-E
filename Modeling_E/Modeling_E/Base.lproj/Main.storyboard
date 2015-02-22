@@ -56,6 +56,10 @@
                                     <segue destination="Hhc-aw-RfT" kind="show" id="hmS-0J-Rtq"/>
                                 </connections>
                             </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRq-qr-AGg">
+                                <rect key="frame" x="26" y="74" width="548" height="452"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXH-Ra-O59">
                                 <rect key="frame" x="26" y="74" width="548" height="452"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -99,14 +103,18 @@
                         <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="SXH-Ra-O59" secondAttribute="centerY" id="4z3-S9-igc"/>
+                            <constraint firstItem="FRq-qr-AGg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="DqC-68-rXV"/>
                             <constraint firstAttribute="centerX" secondItem="ZmF-s9-BzH" secondAttribute="centerX" id="Ix3-fO-oWr"/>
                             <constraint firstItem="ZmF-s9-BzH" firstAttribute="leading" secondItem="6eo-jF-Byg" secondAttribute="trailing" constant="80" id="Jw1-b0-Fsr"/>
                             <constraint firstItem="Do2-v2-IIV" firstAttribute="leading" secondItem="ZmF-s9-BzH" secondAttribute="trailing" constant="80" id="OcF-Hm-DFI"/>
+                            <constraint firstAttribute="centerX" secondItem="FRq-qr-AGg" secondAttribute="centerX" id="P4T-Hc-qIy"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6eo-jF-Byg" secondAttribute="bottom" constant="20" id="YHu-aQ-lWT"/>
+                            <constraint firstAttribute="centerY" secondItem="FRq-qr-AGg" secondAttribute="centerY" id="YtR-dv-ehF"/>
                             <constraint firstItem="6eo-jF-Byg" firstAttribute="top" secondItem="23S-n6-y3h" secondAttribute="bottom" constant="30" id="eSO-cM-KKV"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ZmF-s9-BzH" secondAttribute="bottom" constant="20" id="ehh-Xd-EqL"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Do2-v2-IIV" secondAttribute="bottom" constant="20" id="grI-32-gpL"/>
                             <constraint firstAttribute="centerX" secondItem="SXH-Ra-O59" secondAttribute="centerX" id="hI5-wn-hmW"/>
+                            <constraint firstItem="FRq-qr-AGg" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="iBO-WN-fZV"/>
                             <constraint firstItem="SXH-Ra-O59" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="li1-sR-lFh"/>
                             <constraint firstItem="SXH-Ra-O59" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="rMq-uC-kjv"/>
                             <constraint firstAttribute="centerX" secondItem="23S-n6-y3h" secondAttribute="centerX" id="ux8-Wc-l1X"/>
@@ -115,6 +123,7 @@
                     <navigationItem key="navigationItem" id="itL-cN-Tga"/>
                     <connections>
                         <outlet property="gif" destination="SXH-Ra-O59" id="Emd-ds-Hfk"/>
+                        <outlet property="lastImgView" destination="FRq-qr-AGg" id="p9l-HC-kSv"/>
                         <outlet property="myTextView" destination="rea-1A-LWR" id="3Qf-VG-Eag"/>
                         <outlet property="noButton" destination="gaO-Rr-fff" id="D5v-ug-QS7"/>
                         <outlet property="noButtonView" destination="gaO-Rr-fff" id="80d-YT-WzP"/>
